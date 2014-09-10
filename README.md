@@ -19,14 +19,22 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 To use the module,
 
 ``` javascript
-var lib = require( 'compute-wmean' );
+var wmean = require( 'compute-wmean' );
 ```
 
 
 ## Examples
 
 ``` javascript
-var lib = require( 'compute-wmean' );
+var data = new Array( 100 ),
+	weights = new Array( 100 );
+
+for ( var i = 0; i < data.length; i++ ) {
+	data[ i ] = Math.random()*100;
+	weights[ i ] = Math.random();
+}
+
+console.log( wmean( data, weights ) );
 ```
 
 To run the example code from the top-level application directory,
