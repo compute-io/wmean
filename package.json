@@ -1,6 +1,6 @@
 {
   "name": "compute-wmean",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Computes a weighted mean over an array of values.",
   "author": {
     "name": "Athan Reines",
