@@ -2,7 +2,7 @@ Weighted Mean
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> Computes a weighted mean of an array.
+> Computes the weighted mean of an array.
 
 
 ## Installation
@@ -23,7 +23,7 @@ var wmean = require( 'compute-wmean' );
 
 #### wmean( arr, weights[, opts] )
 
-Computes a weighted mean of an `array`. For numeric `arrays`,
+Computes the weighted mean of an `array`. For numeric `arrays`,
 
 ``` javascript
 var data = [ 1, 3, 3, 1 ],
