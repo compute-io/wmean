@@ -24,7 +24,7 @@ describe( 'compute-wmean', function tests() {
 		expect( wmean ).to.be.a( 'function' );
 	});
 
-	it( 'should throw an error if not provide a value array', function test() {
+	it( 'should throw an error if not provided a value array', function test() {
 		var values = [
 			'5',
 			5,
@@ -46,7 +46,7 @@ describe( 'compute-wmean', function tests() {
 		}
 	});
 
-	it( 'should throw an error if not provide a weights array', function test() {
+	it( 'should throw an error if not provided a weights array', function test() {
 		var values = [
 			'5',
 			5,
@@ -112,10 +112,11 @@ describe( 'compute-wmean', function tests() {
 		}
 	});
 
-	it( 'should throw an error if provided a `normalized` option which is not a boolean', function test() {
+	it( 'should throw an error if provided a `normalized` option which is not a boolean primitive', function test() {
 		var values = [
 			'5',
 			5,
+			new Boolean( true ),
 			function(){},
 			undefined,
 			null,
@@ -134,7 +135,7 @@ describe( 'compute-wmean', function tests() {
 		}
 	});
 
-	it( 'should throw an error if the value array and weights array are not of equal length', function test() {
+	it( 'should throw an error if the value and weights arrays are not of equal length', function test() {
 		expect( foo ).to.throw( Error );
 		function foo() {
 			wmean( [1,2,3,4], [1,1,1] );
